@@ -10,8 +10,8 @@ $email = $_POST['email'];
 $sql = "insert into alunos (nome, email) values ('$nome', '$email')";
 
 if (mysqli_query($conn, $sql)){
-    echo "<h1>Aluno cadastrado com sucesso!</h1>";
-    echo "<a href='index.html'>Voltar</a>";
+    echo "<script type='text/javascript'>alert('Aluno cadastrado com sucesso!');</script>";
+    header("Location: lista.php");
 }
 else  {
     echo "Erro ao cadastrar";
