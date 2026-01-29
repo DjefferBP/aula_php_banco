@@ -11,7 +11,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0 , 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
 }
 h1, h2 {
@@ -74,7 +74,70 @@ th {
 .btn-voltar {
     display: inline-block;
     margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
     text-decoration: none;
-    color: #007bff;
+    border-radius: 5px;
     font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+}
+
+.btn-voltar:hover {
+    background-color: #0052a3;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-voltar::before {
+    content: "← ";
+}
+
+.btn-excluir {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+}
+
+.btn-excluir:hover {
+    background-color: #ff5252;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-excluir::before {
+    content: "🗑️ ";
+}
+
+.btn-editar {
+    background-color: #4dabf7;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(77, 171, 247, 0.2);
+}
+
+.btn-editar:hover {
+    background-color: #339af0;
+    box-shadow: 0 4px 12px rgba(77, 171, 247, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-editar::before {
+    content: "✏️ ";
 }

@@ -13,10 +13,11 @@ include_once("conexao.php")
 <body>
     <div class="container">
         <h2>Alunos cadastrados</h2>
-        <table>
+        <table style='display: flex;'>
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
+                <th >Ações</th>
             </tr>
             <?php
             $sql = "select * from alunos";
@@ -25,11 +26,14 @@ include_once("conexao.php")
                 echo "<tr>";
                 echo "<td>". $linha["nome"]. "</td>";
                 echo "<td>". $linha["email"]. "</td>";
+                echo "<td><a href='excluir.php?id=" . $linha['id'] . "' class='btn-excluir'>Excluir</a></td>";
+                echo "<td><a href='editar.php?id=" . $linha['id'] . "' class='btn-editar'>Editar</a></td>";
                 echo "</tr>";
             }
             ?>
-            <a href="index.html" class="btn-voltar"><-- Cadastrar novo aluno</a>
+            <a href="index.html" class="btn-voltar"> Cadastrar novo aluno</a>
         </table>
+
     </div>
 </body>
 </html>

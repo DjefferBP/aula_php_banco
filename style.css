@@ -43,3 +43,18 @@ button::before {
 label {
     font-size: large;
 }
+
+.link-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.link-button:hover {
+    background-color: rgb(41, 91, 184);
+    transition: background .5s;
+}
