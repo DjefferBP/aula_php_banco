@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diddy sistemas</title>
+    <title>Sistema php</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +15,18 @@
 
             <label for="">Email:</label>
             <input type="email" class="name" name="email" required placeholder="Digite seu email">
+
+            <select name="materia" class="select" required>
+                <option value="" disabled selected>Selecione a materia</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Português">Português</option>
+                <option value="História">História</option>
+                <option value="Geografia">Geografia</option>
+            </select>
+
+            <input type="text" class="number" name="nota1" required placeholder="Digite a  1° nota">
+            <input type="text" class="number" name="nota2" required placeholder="Digite a  2° nota">
+            <input type="text" class="number" name="nota3" required placeholder="Digite a  3° nota">
             
             <button class="submit-button" type="submit">Cadastrar aluno</button>
         </form>

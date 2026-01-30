@@ -58,3 +58,38 @@ label {
     background-color: rgb(41, 91, 184);
     transition: background .5s;
 }
+select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: cornflowerblue;
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.3);
+}
+
+input[type="number"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: cornflowerblue;
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.3);
+}
